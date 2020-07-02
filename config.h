@@ -86,7 +86,7 @@ const int boxdraw_braille = 0;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "xterm-256color";
+char *termname = "st-256color";
 
 /*
  * spaces per tab
@@ -104,6 +104,9 @@ char *termname = "xterm-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
+/* Background opacity */
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
